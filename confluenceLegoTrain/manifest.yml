@@ -1,0 +1,22 @@
+modules:
+  macro:
+    - key: forgelegotrain-hello-world-macro
+      resource: main
+      render: native
+      resolver:
+        function: resolver
+      title: forgeLegoTrain
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: src/frontend/index.jsx
+app:
+  id: ari:cloud:ecosystem::app/a9a9ec55-caa8-4162-bd9a-d3e8526b3d81
+permissions:
+  scopes: []
+  external:
+    fetch:
+      backend:
+        - ca2e-159-196-169-219.ngrok-free.app
